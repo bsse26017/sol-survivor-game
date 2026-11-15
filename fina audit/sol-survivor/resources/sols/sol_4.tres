@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SolData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/sol_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/events/sol4_event.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+sol_number = 4
+title = "Water Trouble"
+objective_text = "Patch the greenhouse dome crack"
+task_description = "There's a crack in the greenhouse dome. Patch it before you lose pressure."
+event = ExtResource("2")
+night_fact = "Water exists on Mars — but mostly as ice at the poles and underground. In 2018, scientists found a lake of liquid water under Mars's south polar ice cap using radar from the Mars Express orbiter."
+night_fact_source = "ESA Mars Express / NASA Mars Exploration"
+temp_min_c = -75.0
+temp_max_c = -18.0

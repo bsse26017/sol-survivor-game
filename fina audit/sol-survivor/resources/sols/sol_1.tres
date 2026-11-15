@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SolData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/sol_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/events/sol1_event.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+sol_number = 1
+title = "Power On"
+objective_text = "Get the power back on — find the main switch"
+task_description = "Walk to the power switch and hold E to flip it on."
+event = ExtResource("2")
+night_fact = "Mars gets only 43% of the sunlight Earth does. Solar panels on Mars need to be much larger, and dust storms can block even more light!"
+night_fact_source = "NASA Mars Exploration Program"
+temp_min_c = -73.0
+temp_max_c = -23.0

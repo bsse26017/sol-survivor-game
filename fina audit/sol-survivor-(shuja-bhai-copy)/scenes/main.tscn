@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dfoisgn5scahc"]
+
+[ext_resource type="PackedScene" uid="uid://0opec5lvjost" path="res://scenes/world/outpost.tscn" id="1_outpost"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="2_player"]
+[ext_resource type="Script" uid="uid://bwdlb7g8gwoe3" path="res://scripts/ui/vignette_overlay.gd" id="3_vignette"]
+[ext_resource type="Script" uid="uid://cpp8u82ie7e48" path="res://scripts/ui/hud.gd" id="4_hud"]
+[ext_resource type="Script" uid="uid://bcmb3od4b0it7" path="res://scripts/ui/event_card.gd" id="5_event_card"]
+[ext_resource type="Script" uid="uid://dg0h7btes2b33" path="res://scripts/ui/night_summary.gd" id="6_night_summary"]
+[ext_resource type="Script" uid="uid://qrprnuderl2c" path="res://scripts/ui/debrief.gd" id="7_debrief"]
+[ext_resource type="Script" uid="uid://61ih1j8el585" path="res://scripts/ui/title_screen.gd" id="8_title"]
+[ext_resource type="Script" uid="uid://bwnpvj1xlv7ko" path="res://scripts/ui/credits_screen.gd" id="9_credits"]
+[ext_resource type="Script" uid="uid://djjnfbbrc0a2v" path="res://scripts/ui/intro_sequence.gd" id="10_intro"]
+[ext_resource type="Script" uid="uid://gu5sf45b78bw" path="res://scripts/outpost_assembly.gd" id="12_eb6dy"]
+
+[node name="Main" type="Node3D" unique_id=700248159]
+
+[node name="Outpost" parent="." unique_id=1541510244 instance=ExtResource("1_outpost")]
+
+[node name="Player" parent="." unique_id=1237529413 instance=ExtResource("2_player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 7.2)
+
+[node name="VignetteOverlay" type="CanvasLayer" parent="." unique_id=1201344773]
+script = ExtResource("3_vignette")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1608555843]
+script = ExtResource("4_hud")
+
+[node name="EventCard" type="CanvasLayer" parent="." unique_id=1078672415]
+script = ExtResource("5_event_card")
+
+[node name="NightSummary" type="CanvasLayer" parent="." unique_id=1227906564]
+script = ExtResource("6_night_summary")
+
+[node name="Debrief" type="CanvasLayer" parent="." unique_id=1920252533]
+script = ExtResource("7_debrief")
+
+[node name="TitleScreen" type="CanvasLayer" parent="." unique_id=258604729]
+script = ExtResource("8_title")
+
+[node name="CreditsScreen" type="CanvasLayer" parent="." unique_id=1170415255]
+script = ExtResource("9_credits")
+
+[node name="IntroSequence" type="CanvasLayer" parent="." unique_id=329499921]
+script = ExtResource("10_intro")
+
+[node name="OutpostAssembly" type="Node3D" parent="." unique_id=1024666829]
+script = ExtResource("12_eb6dy")
+
+[node name="TitleCamera" type="Camera3D" parent="." unique_id=512149965]
+transform = Transform3D(0.809017, 0.18163563, -0.559017, 0, 0.95105654, 0.309017, 0.58778524, -0.25, 0.7694209, -22, 12, 30)
+current = true
+fov = 40.0

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SolData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/sol_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/events/sol3_event.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+sol_number = 3
+title = "First Harvest!"
+objective_text = "Reboot the oxygen tanks"
+task_description = "The oxygen system crashed. Walk to the tanks and hold E to reboot."
+event = ExtResource("2")
+night_fact = "NASA has tested growing potatoes in Mars-like soil. In 2016, the International Potato Center grew potatoes in a sealed container simulating Mars conditions — and it worked!"
+night_fact_source = "International Potato Center / NASA Astrobiology"
+temp_min_c = -70.0
+temp_max_c = -15.0

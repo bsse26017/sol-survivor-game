@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SolData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/sol_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/events/sol6_event.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+sol_number = 6
+title = "Call Home"
+objective_text = "Fix the comms dish — call your crew!"
+task_description = "The dish needs fixing: antenna, cable, power box. Repair it and send the signal."
+event = ExtResource("2")
+night_fact = "In 2018, a global dust storm covered all of Mars for months. NASA's Opportunity rover lost contact during the storm and never recovered. The storm blocked 99% of sunlight reaching the solar panels."
+night_fact_source = "NASA Mars Exploration — Opportunity Rover"
+temp_min_c = -68.0
+temp_max_c = -25.0

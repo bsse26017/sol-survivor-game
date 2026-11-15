@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SolData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/sol_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/events/sol2_event.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+sol_number = 2
+title = "The Cold Night"
+objective_text = "Fix the heater before nightfall"
+task_description = "The heater is broken. Find it and hold E to repair it."
+event = ExtResource("2")
+night_fact = "Mars temperatures can drop to −78 °C at night in Gale Crater. That's colder than anywhere on Earth! The Curiosity rover measured this with its REMS weather station."
+night_fact_source = "NASA Curiosity Rover — REMS Weather Station"
+temp_min_c = -78.0
+temp_max_c = -21.0

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SolData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/sol_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/events/sol5_event.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+sol_number = 5
+title = "Solar Storm"
+objective_text = "Repair the shelter wall for radiation protection"
+task_description = "The shelter wall is damaged. Repair it to boost your radiation shielding."
+event = ExtResource("2")
+night_fact = "The Sun can throw out huge bursts of energy called solar flares. On Mars, with almost no magnetic field and a very thin atmosphere, astronauts would need thick shelters to stay safe from radiation."
+night_fact_source = "NASA DONKI Space Weather Database"
+temp_min_c = -72.0
+temp_max_c = -20.0
+radiation_note = "Solar particle event detected — elevated radiation levels"

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://helper_robot_scene"]
+
+[ext_resource type="Script" path="res://scripts/helper_robot.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://1a1giyj57dp7" path="res://assets/models/yoda_robot.glb" id="2_yoda_model"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1"]
+height = 0.6
+radius = 0.28
+
+[node name="HelperRobot" type="CharacterBody3D"]
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("1_script")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+shape = SubResource("CylinderShape3D_1")
+
+[node name="YodaRobot" parent="." instance=ExtResource("2_yoda_model")]

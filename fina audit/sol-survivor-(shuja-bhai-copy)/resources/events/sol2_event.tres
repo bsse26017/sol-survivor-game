@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/event_choice.gd" id="2"]
+
+[sub_resource type="Resource" id="choice_1"]
+script = ExtResource("2")
+text = "Heat the whole hab"
+icon = "🔥"
+life_support_change = 10.0
+power_change = -20.0
+food_change = 0.0
+shield_change = 0.0
+
+[sub_resource type="Resource" id="choice_2"]
+script = ExtResource("2")
+text = "Heat only the bedroom"
+icon = "🛏️"
+life_support_change = 0.0
+power_change = -10.0
+food_change = -10.0
+shield_change = 0.0
+
+[sub_resource type="Resource" id="choice_3"]
+script = ExtResource("2")
+text = "Wear extra layers, no heat"
+icon = "🧥"
+life_support_change = -15.0
+power_change = 0.0
+food_change = 0.0
+shield_change = 0.0
+
+[resource]
+script = ExtResource("1")
+title = "Extreme Cold"
+description = "Tonight it will be −78 °C! The heater is fixed but running it costs power."
+choices = [SubResource("choice_1"), SubResource("choice_2"), SubResource("choice_3")]
